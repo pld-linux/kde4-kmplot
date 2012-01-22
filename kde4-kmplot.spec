@@ -3,16 +3,17 @@
 
 Summary:	K Desktop Environment - Mathematical function plotter
 Summary(pl_PL.UTF8):	K Desktop Environment - Rysowanie wykresów funkcji matematycznych
-Name:		kmplot
-Version:	4.7.3
+Name:		kde4-kmplot
+Version:	4.8.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Science
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	5eec907bdce49c2b738283d017cea3dc
+# Source0-md5:	9922acd164d3b152551ad8a501e7e6a6
 URL:		http://www.kde.org/
 BuildRequires:	kde4-kdelibs-devel
 Obsoletes:	kde4-kdeedu-kmplot < 4.6.99
+Obsoletes:	kmplot <= 4.8.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -42,12 +43,12 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	kde_htmldir=%{_kdedocdir}
 
-%find_lang %{name} --with-kde
+%find_lang %{orgname} --with-kde
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -f %{name}.lang
+%files -f %{orgname}.lang
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/kmplot
 %attr(755,root,root) %{_libdir}/kde4/libkmplotpart.so
