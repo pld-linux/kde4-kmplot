@@ -2,7 +2,7 @@
 %define		orgname		kmplot
 
 Summary:	K Desktop Environment - Mathematical function plotter
-Summary(pl_PL.UTF8):	K Desktop Environment - Rysowanie wykresów funkcji matematycznych
+Summary(pl.UTF-8):	K Desktop Environment - Rysowanie wykresów funkcji matematycznych
 Name:		kde4-kmplot
 Version:	4.9.1
 Release:	1
