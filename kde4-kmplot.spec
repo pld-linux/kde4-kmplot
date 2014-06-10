@@ -4,12 +4,12 @@
 Summary:	K Desktop Environment - Mathematical function plotter
 Summary(pl.UTF-8):	K Desktop Environment - Rysowanie wykresów funkcji matematycznych
 Name:		kde4-kmplot
-Version:	4.13.1
+Version:	4.13.2
 Release:	1
 License:	GPL
 Group:		X11/Applications/Science
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	703b4aa356aa0004eefdf9179fed4c0d
+# Source0-md5:	2f22150fd2e46941ccb9a4deeb619f9e
 URL:		http://www.kde.org/
 BuildRequires:	kde4-kdelibs-devel
 Obsoletes:	kde4-kdeedu-kmplot < 4.6.99
